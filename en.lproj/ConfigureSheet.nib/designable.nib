@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TodayView">
+            <connections>
+                <outlet property="colorComboOption" destination="398" id="402"/>
+                <outlet property="colorWellOption" destination="395" id="403"/>
+                <outlet property="configSheet" destination="372" id="404"/>
+                <outlet property="hyperlinkTextField" destination="384" id="405"/>
+                <outlet property="randomCheckOption" destination="389" id="406"/>
+                <outlet property="showDateOption" destination="378" id="407"/>
+                <outlet property="showDayOption" destination="416" id="418"/>
+                <outlet property="showTimeOption" destination="379" id="409"/>
+                <outlet property="showTimeShortOption" destination="380" id="417"/>
+                <outlet property="versionTextField" destination="387" id="410"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="369" customClass="NSApplication"/>
+        <customObject id="370" customClass="NSApplication"/>
+        <customObject id="371" customClass="NSApplication"/>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="372" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="220" y="242" width="400" height="237"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <value key="minSize" type="size" width="213" height="107"/>
+            <view key="contentView" id="373">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="237"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" id="382">
+                        <rect key="frame" x="17" y="137" width="58" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Display:" id="383">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="387">
+                        <rect key="frame" x="280" y="181" width="103" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="version x.xx" id="388">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" white="0.66000002999999996" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="396">
+                        <rect key="frame" x="200" y="97" width="88" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Background:" id="397">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" autosizesCells="NO" id="377">
+                        <rect key="frame" x="73" y="76" width="101" height="78"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        <size key="cellSize" width="101" height="18"/>
+                        <size key="intercellSpacing" width="4" height="2"/>
+                        <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" inset="2" id="381">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <cells>
+                            <column>
+                                <buttonCell type="radio" title="Date" imagePosition="left" alignment="left" state="on" inset="2" id="378">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <buttonCell type="radio" title="Time (Long)" imagePosition="left" alignment="left" tag="1" inset="2" id="379">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <buttonCell type="radio" title="Time (Short)" imagePosition="left" alignment="left" inset="2" id="380">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <buttonCell type="radio" title="Day" imagePosition="left" alignment="left" inset="2" id="416">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </column>
+                        </cells>
+                    </matrix>
+                    <box verticalHuggingPriority="750" boxType="separator" id="376">
+                        <rect key="frame" x="20" y="165" width="360" height="5"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </box>
+                    <box verticalHuggingPriority="750" boxType="separator" id="386">
+                        <rect key="frame" x="20" y="59" width="360" height="5"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </box>
+                    <textField verticalHuggingPriority="750" id="374">
+                        <rect key="frame" x="17" y="194" width="160" height="23"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Today, by Matt Sephton" id="375">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField focusRingType="none" verticalHuggingPriority="750" id="384">
+                        <rect key="frame" x="17" y="181" width="224" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" title="www.gingerbeardman.com/today/" allowsEditingTextAttributes="YES" id="385">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" red="0.90980399000000001" green="0.90980399000000001" blue="0.90980399000000001" alpha="1" colorSpace="deviceRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="NSCursor" value="pointingHand"/>
+                            </userDefinedRuntimeAttributes>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="393">
+                        <rect key="frame" x="218" y="13" width="84" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="394">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancelClick:" target="-2" id="413"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" id="391">
+                        <rect key="frame" x="302" y="13" width="84" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="392">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="okClick:" target="-2" id="412"/>
+                        </connections>
+                    </button>
+                    <comboBox verticalHuggingPriority="750" textCompletion="NO" id="398">
+                        <rect key="frame" x="285" y="93" width="98" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" title="Gray" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="399">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <objectValues>
+                                <string>Black</string>
+                                <string>Blue</string>
+                                <string>Brown</string>
+                                <string>Cyan</string>
+                                <string>Dark Gray</string>
+                                <string>Gray</string>
+                                <string>Green</string>
+                                <string>Light Gray</string>
+                                <string>Mauve</string>
+                                <string>Orange</string>
+                                <string>Purple</string>
+                                <string>Red</string>
+                                <string>Yuck</string>
+                                <string>Custom</string>
+                            </objectValues>
+                        </comboBoxCell>
+                    </comboBox>
+                    <button id="389">
+                        <rect key="frame" x="180" y="136" width="202" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Random background colour:" bezelStyle="regularSquare" imagePosition="right" alignment="left" state="on" inset="2" id="390">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="updateSelection:" target="-2" id="411"/>
+                        </connections>
+                    </button>
+                    <colorWell hidden="YES" id="395">
+                        <rect key="frame" x="336" y="94" width="44" height="23"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <action selector="updateColorWell:" target="-2" id="414"/>
+                        </connections>
+                    </colorWell>
+                </subviews>
+            </view>
+        </window>
+        <view id="400">
+            <rect key="frame" x="0.0" y="0.0" width="222" height="1"/>
+            <autoresizingMask key="autoresizingMask"/>
+        </view>
+        <view id="401">
+            <rect key="frame" x="0.0" y="0.0" width="222" height="1"/>
+            <autoresizingMask key="autoresizingMask"/>
+        </view>
+    </objects>
+</document>
