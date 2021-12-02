@@ -10,5 +10,5 @@ See https://www.gingerbeardman.com/today/ for more information.
 
 Please contact me before undertaking any major work. Approved Pull Requests will be merged.
 
-## Licence
+## License
 [MIT](LICENSE)
