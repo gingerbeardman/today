@@ -8,7 +8,9 @@ See https://www.gingerbeardman.com/today/ for more information.
 
 ## Contributions
 
-Please contact me before undertaking any major work. Approved Pull Requests will be merged.
+Please contact me before undertaking any major work. 
+
+Approved Pull Requests will be happily merged.
 
 ## License
 [MIT](LICENSE)
