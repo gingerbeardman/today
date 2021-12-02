@@ -1,8 +1,10 @@
 # Today
 
-Screensaver for macOS inspired by the work of On Kawara
+Screensaver for macOS inspired by the work of On Kawara.
 
 This source code is provided without support.
+
+See https://www.gingerbeardman.com/today/ for more information.
 
 ## Contributions
 
