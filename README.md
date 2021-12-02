@@ -1,4 +1,4 @@
-# Today
+# Today.saver
 
 Screensaver for macOS inspired by the work of On Kawara.
 
