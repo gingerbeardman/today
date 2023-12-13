@@ -317,18 +317,18 @@ static NSString * const MyModuleName = @"com.gingerbeardman.today";
 		FSRef fsRef;
 		CFURLGetFSRef((CFURLRef)fontsURL, &fsRef);
 		status = ATSFontActivateFromFileReference(&fsRef, kATSFontContextLocal, kATSFontFormatUnspecified, NULL, kATSOptionFlagsDefault, NULL);
-		if (status != noErr)
-		{
-			errorMessage = @"Failed to acivate fonts!";
-			NSLog( @"Failed to activate fonts!" );
-			if (err != NULL) {
-				NSString *localizedMessage = NSLocalizedString(errorMessage, @"");
-				NSDictionary *userInfo = [NSDictionary dictionaryWithObject:localizedMessage forKey:NSLocalizedDescriptionKey];
-				*err = [[NSError alloc] initWithDomain:NSCocoaErrorDomain code:0 userInfo:userInfo];
-			}
-
-			return NO;
-		}
+//		if (status != noErr)
+//		{
+//			errorMessage = @"Failed to acivate fonts!";
+//			NSLog( @"Failed to activate fonts!" );
+//			if (err != NULL) {
+//				NSString *localizedMessage = NSLocalizedString(errorMessage, @"");
+//				NSDictionary *userInfo = [NSDictionary dictionaryWithObject:localizedMessage forKey:NSLocalizedDescriptionKey];
+//				*err = [[NSError alloc] initWithDomain:NSCocoaErrorDomain code:0 userInfo:userInfo];
+//			}
+//
+//			return NO;
+//		}
 	}
 	if (fontnames != nil)
 	{
